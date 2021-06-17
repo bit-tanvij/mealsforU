@@ -1,0 +1,234 @@
+/* CSS Reset */
+* {
+    margin: 0px 0px;
+    padding: 0px 0px;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* navigation bar */
+
+/* navigation bar: logo and imaage */
+#logo {
+    margin: 2px 30px;
+}
+
+#logo img {
+    height: 50px;
+    margin: 3px 2px;
+}
+
+/* navigation bar: list items */
+#navbar {
+    display: flex;
+    align-items: center;
+    position: sticky;
+    z-index: +1;
+    top: 0px;
+}
+#navbar ul {
+    display: flex;
+    font-family: Comic Sans MS , Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%; 
+    z-index: -1;           
+    opacity: 0.8;
+}
+#navbar ul li {
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+
+#navbar ul li a {
+    color: white;
+    display: block;
+    border-radius: 20px;
+    text-decoration: none;
+    padding: 3px 13px;
+}
+#navbar ul li a:hover {
+    color: black;
+    background-color: whitesmoke;
+}
+/* Home Section */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+}
+#home::before{
+    content: "";
+    position: absolute;
+    background: url('cuttingb.jpg') no-repeat center center/cover;
+    height: 570px; 
+    top: 0px;
+    left: 0px;           
+    width: 100%; 
+    z-index: -1; 
+    opacity: 0.9;
+    
+}
+
+#home h1{
+    color: white;
+    text-align: center;
+    font-family: Constantia , fantasy;
+}
+
+#home p{
+    color: white;
+    text-align: center;
+    font-size: 1.3rem;
+    font-family: Constantia , fantasy;
+}
+
+/* Services Section */
+#service-cont{
+    background: url('sd.jpg') no-repeat center center/cover;
+}
+
+#services{
+    margin: 15px;
+    display: flex;
+    justify-content: center;
+}
+#services .box{
+    padding: 10px;
+    border: 2px solid brown;
+    margin: 25px 30px;
+    border-radius: 25px;
+    background-color: rgb(229, 225, 223);
+    opacity: 0.85;
+    
+}
+#services .box img{
+    height: 150px;
+    border: 2px solid black;
+    display: block;
+    margin: auto;
+}
+#services box p{
+    font-family: Bree-serif , Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+/* Client Section */
+#client-sec{
+    position: relative;
+}
+
+#client-sec::before{
+    content: "";
+    position: absolute;
+    background: url(rawv.jpg) no-repeat center center/cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.55;
+    
+}
+#client{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.client-item{
+    padding: 10px;
+}
+
+#client img{
+    height: 150px;
+}
+/* Contact Section */
+
+#contact{
+    position: relative;
+}
+
+#contact::before{
+    content: "";
+    background: url(conta.jpg)no-repeat center center/cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+#cont-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 30px;
+}
+
+#cont-box form{
+    width: 45%;   
+}
+
+#cont-box label{
+    font-size: 1.3rem;
+    font-family: Batang , Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+#contact input,
+#contact textarea{
+    width: 100%;
+    padding: 0.3rem;
+    opacity: 0.6;
+    border-radius: 20px;
+    font-size: 1.1rem;
+}
+#contact button{
+    width: 35%;
+    padding: 0.3rem;
+    opacity: 0.8;
+    border-radius: 20px;
+    font-size: 1.1rem; 
+}
+
+footer{
+    background-color: black;
+    color: white;
+    padding: 9px 20px; 
+}
+/* Utility Class */
+.primary{
+    font-size: 3.2rem;
+    padding: 20px;
+    font-family: Batang , Arial, "Helvetica Neue", Helvetica, sans-serif;
+    
+}
+.secondary{
+    font-size: 1.8rem;
+    padding: 6px;
+    font-family: Batang , Arial, "Helvetica Neue", Helvetica, sans-serif;
+    
+}
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: grey;
+    color: white;
+    border-radius: 12px;
+    font-size: 1.2rem;
+    margin: 17px 17px;
+    cursor: pointer;
+}
+.centre{
+    text-align: center;
+}
